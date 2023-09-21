@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Crimson+Text:ital@1&family=Dosis&family=Merienda:wght@400;600&family=Roboto:wght@300&family=Silkscreen&display=swap');
+*{
+    padding: 800;
+    margin: 800;
+    border-radius: 2%;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+body{
+    width: 1000px;
+    height: 300px;
+    background: url(https://wallpaperaccess.com/full/862202.png);
+}
+header{
+    
+    display: flex;
+    height:600px;
+    width: 1110px;
+    margin-top: 80px;
+    margin-left: 49px;
+    margin-bottom: 100px;
+    /* margin-right: 1cm; */
+    overflow-x: hidden;
+    background-image: url(./images/Capture.PNG);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: right;
+    background-size: 50vw 100vh;
+    flex-direction: column;
+    background-color:rgb(240, 147, 43);
+    max-width: 190%;
+    max-height: 150%;
+} 
+nav{
+    width:1110px; ;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px 40px;
+}
+.logo
+{
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: white;
+}
+/* Style the links inside the navigation bar */
+.menu a{
+text-decoration: none;
+color: white;
+font-size: 16px;
+padding: 10px 20px;
+font-weight: bold;
+border-radius: 5px;
+}
+/* Change the color of links on hover */
+.menu a:hover{
+    background-color:white;
+  color: rgb(240, 147, 43);
+}
+/* Style the search box inside the navigation bar */
+nav .menu input[type=text] {
+    /* float: right; */
+    padding: 0px;
+    border-color: white;
+    margin-top: 3px;
+    margin-right: 16px;
+    font-size: 14px;
+    border: 1px;
+    border-radius:5%;
+    padding-left: 15px;
+  }
+  input:focus{
+    outline: none;
+  }
+  button{
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    border:none;
+    background-color: white;
+    margin-top: 4px;
+    margin-left: -45px;
+    height: 10px;
+    color:rgb(240, 147, 43) ;
+  }
+  .content{
+    margin-top: 55px;
+    margin-left: 40px;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+  }
+  h5{
+    font-weight: lighter;
+    font-size: 14px;
+  }
+  span{
+    font-weight:bolder;
+  }
+  .b2{
+    width: 100px;
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 15%;
+    background-color:rgb(240, 147, 43)  ;
+    color: white;
+    margin-left: 3px;
+  }
+  /* creating 2 cards */
+  .card1{
+    border: 2px solid white;
+    width: 150px;
+    height: 130px;
+    margin-left: 470px;
+    background-color: white;
+    margin-top: -190px;
+    border-radius: 8%;
+    line-height: 13px;
+    padding: 5px;
+  }
+  .card2{
+    border: 2px solid white;
+    width: 150px;
+    height: 130px;
+    margin-left: 470px;
+    background-color: white;
+    
+    border-radius: 8%;
+    line-height: 13px;
+    padding: 5px;
+    
+  }
+
+  
