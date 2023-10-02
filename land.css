@@ -1,43 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Crimson+Text:ital@1&family=Dosis&family=Merienda:wght@400;600&family=Roboto:wght@300&family=Silkscreen&display=swap');
 *{
-    padding: 800;
-    margin: 800;
-    border-radius: 2%;
+   
+    
     box-sizing: border-box;
     font-family: 'Dosis', sans-serif;
 }
 
-body{
-    width: 1000px;
-    height: 300px;
-    background: url(https://wallpaperaccess.com/full/862202.png);
-}
+
 header{
     
     display: flex;
     height:600px;
-    width: 1110px;
-    margin-top: 80px;
-    margin-left: 49px;
-    margin-bottom: 100px;
-    /* margin-right: 1cm; */
+    width: 100%;
+    
     overflow-x: hidden;
     background-image: url(./images/Capture.PNG);
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
+    
     background-position: right;
-    background-size: 50vw 100vh;
+    background-size: 60vw 100vh;
     flex-direction: column;
     background-color:rgb(240, 147, 43);
     max-width: 190%;
     max-height: 150%;
 } 
 nav{
-    width:1110px; ;
+    width:98.6%; 
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content:space-between;
     padding: 10px 40px;
+    z-index: 99;
+    background-color:black ;
 }
 .logo
 {
@@ -47,7 +42,7 @@ nav{
     color: white;
 }
 /* Style the links inside the navigation bar */
-.menu a{
+nav ul li a{
 text-decoration: none;
 color: white;
 font-size: 16px;
@@ -56,13 +51,13 @@ font-weight: bold;
 border-radius: 5px;
 }
 /* Change the color of links on hover */
-.menu a:hover{
+ul a:hover{
     background-color:white;
   color: rgb(240, 147, 43);
 }
 /* Style the search box inside the navigation bar */
-nav .menu input[type=text] {
-    /* float: right; */
+nav ul input[type=text] {
+   
     padding: 0px;
     border-color: white;
     margin-top: 3px;
@@ -72,9 +67,47 @@ nav .menu input[type=text] {
     border-radius:5%;
     padding-left: 15px;
   }
+
   input:focus{
     outline: none;
   }
+  nav .checkbox{
+    display: none;
+
+}
+nav input{
+   display: none;
+
+}
+nav .checkbox i {
+
+   font-size: 2rem;
+   color:white;
+   cursor: pointer;
+}
+
+ul {
+
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   list-style: none;
+   transition: left 0.3s;
+
+}
+
+ul li a {
+
+   padding: 0.5rem 1rem;
+   border: 2px solid transparent;
+   text-decoration: none;
+   font-weight: 600;
+   color:var(--text-dark);
+   transition: 0.3s;
+   font-size: 20px;
+
+}
+
   button{
     position: absolute;
     border-radius: 50%;
@@ -87,7 +120,7 @@ nav .menu input[type=text] {
     color:rgb(240, 147, 43) ;
   }
   .content{
-    margin-top: 55px;
+    margin-top: 145px;
     margin-left: 40px;
     letter-spacing: 2px;
     color: white;
@@ -113,9 +146,9 @@ nav .menu input[type=text] {
   /* creating 2 cards */
   .card1{
     border: 2px solid white;
-    width: 150px;
-    height: 130px;
-    margin-left: 470px;
+    width: 160px;
+    height: 180px;
+    margin-left: 500px;
     background-color: white;
     margin-top: -190px;
     border-radius: 8%;
@@ -124,9 +157,9 @@ nav .menu input[type=text] {
   }
   .card2{
     border: 2px solid white;
-    width: 150px;
-    height: 130px;
-    margin-left: 470px;
+    width: 160px;
+    height: 180px;
+    margin-left: 500px;
     background-color: white;
     
     border-radius: 8%;
@@ -134,5 +167,233 @@ nav .menu input[type=text] {
     padding: 5px;
     
   }
+ .about{
+  margin-top: 80px;
 
+
+ }
+ .img2{
+  border-radius: 5%;
+  margin-left: 130px;
+  margin-top: -440px;
+ }
+ .col2 h1{
+  color:rgb(240, 147, 43)   ;
+  font-size: 50px;
+  font-weight: 800;
+ }
+ .col2{
+  margin-left: 600px;
+  margin-top: -520px;
+ }
+ .col2 p{
+  line-height: 1.5;
+  color: rgb(86, 85, 85);
+ }
+ .col2 i{
+  color:rgb(240, 147, 43)   ;
   
+ }
+ .adrs{
+  margin-top: -40px;
+  margin-left: 30px;
+  color: black;
+  font-weight: bolder;
+ }
+ .sec3{
+  margin-top: 250px;
+background-color: rgb(38, 145, 60);
+color: white;
+padding: 40px;
+display: flex;
+justify-content: space-between;
+align-items:center;
+
+ }
+ .dishes{
+  margin-top: -50px;
+  width: 50%;
+ }
+ .dishimg{
+  border-radius: 7%;
+  margin-top: 30px;
+
+ }
+ .dishimg2{
+  margin-left:- 700px;
+ }
+ .bar{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+ .btn3{
+  width: 100px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 20%;
+    text-decoration: none;
+    padding: 5px;
+   
+ }
+ .imgrow1{
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+ }
+ .card3{
+  height: 400px;
+  width: 350px;
+  align-items: center;
+  
+ }
+ .imgrow1 img{
+  width:350px ;
+  height: 300px;
+  border-radius: 5%;
+ }
+ .contacts{
+  background-color: rgb(37, 36, 36);
+  height: 500px;
+ 
+ }
+ .logo1
+{
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: white;
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.contacts i{
+  color:rgb(240, 147, 43) ;
+  
+ 
+}
+.contactus{
+  margin-top: 50px;
+  margin-left: 40px;
+  display:flex;
+  flex-direction: column;
+  
+}
+.btn4{
+  background-color:rgb(240, 147, 43) ;
+  border-radius: 40%;
+  width: 150px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 15px;
+  margin-top: 2px;
+  margin-left: 500px;
+}
+.social {
+  display: inline-block;
+  color: white;
+  margin-left: 1000px;
+  margin-top:-40px;
+}
+.social i{
+  margin-left: 10px;
+  color: white;
+  }
+  .details{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 23px;
+    padding-right: 45px;
+  }
+  .details span{
+    color:rgb(240, 147, 43) ;
+  }
+  .details a{
+    text-decoration: none;
+    color: white;
+
+  }
+  .email{
+    width: 300px;
+    height: 40px;
+  }
+  .details span{
+    color: grey;
+    font-size: 14px;
+  }
+  footer{
+    margin-top: 50px;
+    letter-spacing: 1.5 cm;
+  }
+  footer p{
+    color: white;
+    font-size: 16px;
+
+    
+  }
+  footer span{
+    color:rgb(240, 147, 43) ;
+    font-size: 16px;
+  }
+
+  @media (width <= 740px) {
+
+    nav .checkbox { 
+         display: block;
+
+                 }
+                
+    ul {
+                
+        position: absolute;
+        width: 23%;
+        height: 495px;
+        left: -100%;
+        top: 45px;
+        background-color:black;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+        color: white;
+        }
+
+        nav #check:checked ~ ul{
+            left:0;
+        }
+
+        nav{
+          width:100%
+        }
+        .contacts{
+          width:1100px;
+          height: 550px;
+        }
+        .sec3{
+          
+          width: 1100px;
+          margin-top: 90px;
+         }
+         .col2{
+          width: 400px;
+         }
+         header{
+    
+          
+          height:600px;
+          width: 1100px;
+          
+          
+          background-size: 100vw 117vh;
+          flex-direction: column;
+          background-color:rgb(240, 147, 43);
+          max-width: 500%;
+          max-height: 260%;
+       
+      }
+    }
